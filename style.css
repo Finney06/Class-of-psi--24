@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+		body {
+			background: url(images/3661935.webp) ;
+			background-size: cover;
+			font-family: "Montserrat", sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 35px;
+			/* font-family: "Madimi One", sans-serif; */
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 400px;
+			margin: 35px auto;
+			padding: 30px 20px;
+			border-radius: 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input, 
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		.optional {
+			color: red;
+			font-size: 10px;
+			font-weight: bold;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			padding: 15px;
+			font-weight: 500;
+			border-radius: 5px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			transition: all ease-in-out 300ms;
+		}
+
+		button:hover {
+			background-color: #068e4f;
+			color:white;
+		}
+
+		.popup-overlay {
+			display: none;
+		}
+	
+		.popup-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+			backdrop-filter: blur(5px);
+			/* display: flex; */
+			justify-content: center;
+			align-items: center;
+		  }
+		  
+		  .popup-card {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+			position: relative;
+		  }
+
+
+		  .circular-image {
+			width: 100px;
+			height: auto;
+			border-radius: 50%; /* Ensures the image is circular */
+			position: absolute;
+			top: -50px; /* Position slightly above the card */
+			left: calc(50% - 50px); /* Center horizontally */
+			border: 2px solid white; /* Optional: Add a border */
+			background-color: #05c46b;
+		  }
+
+		  .popup-card h2 {
+			margin-top: 40px;
+		  }
+		  
+		  #ok-button {
+			padding: 10px 20px;
+			background-color: #05c46b;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		  }
+
+		  #ok-button:hover {
+			background-color: #068e4f;;
+		  }
+
+		  /* Styling the loader */
+#loader {
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	background-image: url(images/Spinner.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Styling the submit button */
+.submit-button {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+	justify-content: center;
+}
+
+/* Center the loader vertically with the text */
+.submit-button #loader {
+    align-self: center; /* Align vertically */
+}
+
+		  
