@@ -72,7 +72,7 @@ function submitForm(event) {
         if (response.ok) {
             // Display confirmation message
             showPopup(); // Call showPopup function if form submission is successful
-            document.getElementById('submit-text').innerText = 'submit';
+            document.getElementById('submit-text').innerText = 'Submit';
             document.getElementById('loader').style.display = 'none';
             // Reset the form
             document.getElementById('form').reset();
@@ -80,14 +80,14 @@ function submitForm(event) {
             // Handle error response
             console.error('Error submitting form:', response.statusText);
             alert('Error submitting form:', response.statusText); // Show error message
-            document.getElementById('submit-text').innerText = 'submit';
+            document.getElementById('submit-text').innerText = 'Submit';
             document.getElementById('loader').style.display = 'none';
         }
     })
     .catch(error => {
         console.error('Error submitting form:', error);
         alert('Error submitting form: ' + error); // Show error message with full error details
-        document.getElementById('submit-text').innerText = 'submit';
+        document.getElementById('submit-text').innerText = 'Submit';
         document.getElementById('loader').style.display = 'none';
     });
 }
