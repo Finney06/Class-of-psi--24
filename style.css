@@ -1,171 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 body {
-    background: url(images/3661935.webp);
-    background-size: cover;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+	background: url(images/3661935.webp);
+	background-size: cover;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
 }
 
 h1 {
-    font-size: 35px;
+	font-size: 35px;
+	/* font-family: "Madimi One", sans-serif; */
 }
 
+/* Styling the Form (Color, Padding, Shadow) */
 form {
-    background-color: #fff;
-    max-width: 400px;
-    margin: 35px auto;
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	max-width: 400px;
+	margin: 35px auto;
+	padding: 30px 20px;
+	border-radius: 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Styling form-control Class */
 .form-control {
-    text-align: left;
-    margin-bottom: 25px;
+	text-align: left;
+	margin-bottom: 25px;
 }
 
+/* Styling form-control Label */
 .form-control label {
-    display: block;
-    margin-bottom: 10px;
+	display: block;
+	margin-bottom: 10px;
 }
 
+/* Styling form-control input, 
+		select, textarea */
 .form-control input,
 .form-control select,
 .form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	padding: 10px;
+	display: block;
+	width: 95%;
 }
 
 .optional {
-    color: red;
-    font-size: 10px;
-    font-weight: bold;
+	color: red;
+	font-size: 10px;
+	font-weight: bold;
 }
 
+/* Styling Button */
 button {
-    background-color: #05c46b;
-    border: 1px solid #777;
-    padding: 10px;
-    font-weight: 500;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 21px;
-    display: block;
-    width: 100%;
-    color: white;
-    transition: all ease-in-out 300ms;
+	background-color: #05c46b;
+	border: 1px solid #777;
+	padding: 10px;
+	font-weight: 500;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 21px;
+	display: block;
+	width: 100%;
+	color: white;
+	transition: all ease-in-out 300ms;
 }
 
 button:hover {
-    background-color: #068e4f;
+	background-color: #068e4f;
 }
 
-.popup-overlay,
-#login-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    align-items: center;
+.popup-overlay {
+	display: none;
+}
+
+.popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent background */
+	backdrop-filter: blur(5px);
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
 }
 
 .popup-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    border: 1.5px solid #312c2c;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	border: 1.5px solid #312c2c;
 }
 
+
 .circular-image {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-    border: 2px solid #312c2c;
-    background-color: #05c46b;
+	width: 100px;
+	height: auto;
+	border-radius: 50%;
+	/* Ensures the image is circular */
+	position: absolute;
+	top: -50px;
+	/* Position slightly above the card */
+	left: calc(50% - 50px);
+	/* Center horizontally */
+	border: 2px solid #312c2c;
+	/* Optional: Add a border */
+	background-color: #05c46b;
 }
 
 .popup-card h2 {
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 #ok-button {
-    padding: 10px 20px;
-    background-color: #05c46b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
+	padding: 10px 20px;
+	background-color: #05c46b;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
 }
 
 #ok-button:hover {
-    background-color: #068e4f;
+	background-color: #068e4f;
+	;
 }
 
 .rocket {
-    width: 30px;
-    margin-left: 8px;
+	width: 30px;
+	margin-left: 8px;
 }
 
+/* Styling the loader */
 #loader {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    background-image: url(images/Spinner.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	background-image: url(images/Spinner.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
+
+/* Styling the submit button */
 .submit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	/* Use flexbox */
+	align-items: center;
+	/* Align items vertically */
+	justify-content: center;
 }
 
+/* Center the loader vertically with the text */
 .submit-button #loader {
-    align-self: center;
+	align-self: center;
+	/* Align vertically */
+}
+
+
+/* Styling the login popup */
+#login-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent background */
+	backdrop-filter: blur(5px);
+	justify-content: center;
+	align-items: center;
 }
 
 #login-popup .popup-card {
-    width: 300px;
+	border: 1.5px solid #312c2c;
+	width: 300px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
 }
 
 #login-input {
-    text-align: justify;
+text-align: justify;
 }
 
 #login-popup input {
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 93%;
-    margin-bottom: 15px;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	padding: 10px;
+	display: block;
+	width: 93%;
+	margin-bottom: 15px;
 }
 
 #continue-button {
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-size: 20px;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
