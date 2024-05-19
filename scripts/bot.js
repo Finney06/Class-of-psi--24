@@ -1,4 +1,4 @@
-// import fetch from 'node-fetch'
+import fetch from 'node-fetch'
 
 
 
@@ -130,4 +130,4 @@ async function sendBirthdayMessages() {
  
  sendBirthdayMessages();
 
-// export { sendBirthdayMessages };
+export { sendBirthdayMessages };
